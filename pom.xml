@@ -53,6 +53,28 @@
         </configuration>
       </plugin>
 
+             
+    <!-- Existing build configuration -->
+
+    <!-- Move reportPlugins configuration to reporting section -->
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.9.1</version>
+                <configuration>
+                    <!-- Existing configuration for maven-site-plugin -->
+                    <reportPlugins>
+                        <!-- ... -->
+                    </reportPlugins>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+
+
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
